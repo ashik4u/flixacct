@@ -1,1 +1,34 @@
-{\n  "name": "flixacct",\n  "version": "1.0.0",\n  "private": true,\n  "scripts": {\n    "build": "gatsby build",\n    "develop": "gatsby develop",\n    "start": "gatsby develop",\n    "serve": "gatsby serve",\n    "clean": "gatsby clean"\n  },\n  "dependencies": {\n    "gatsby": "^4.0.0",\n    "react": "^17.0.0",\n    "react-dom": "^17.0.0",\n    "gatsby-plugin-react-helmet": "^5.0.0",\n    "gatsby-plugin-styled-components": "^5.0.0",\n    "gatsby-plugin-image": "^2.0.0",\n    "gatsby-plugin-sharp": "^4.0.0",\n    "gatsby-transformer-sharp": "^4.0.0",\n    "gatsby-plugin-sitemap": "^5.0.0",\n    "gatsby-transformer-remark": "^5.0.0",\n    "gatsby-source-filesystem": "^4.0.0",\n    "gatsby-remark-external-links": "^4.0.0",\n    "gatsby-remark-images": "^6.0.0",\n    "gatsby-remark-code-titles": "^1.1.0",\n    "gatsby-remark-prismjs": "^6.0.0",\n    "prismjs": "^1.27.0",\n    "gatsby-plugin-manifest": "^4.0.0",\n    "gatsby-plugin-offline": "^5.0.0",\n    "gatsby-plugin-google-analytics": "^4.0.0",\n    "gatsby-plugin-robots-txt": "^1.5.5"\n  }\n}
+{
+  "name": "flixacct",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^4.0.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "gatsby-plugin-react-helmet": "^5.0.0",
+    "gatsby-plugin-styled-components": "^5.0.0",
+    "gatsby-plugin-image": "^2.0.0",
+    "gatsby-plugin-sharp": "^4.0.0",
+    "gatsby-transformer-sharp": "^4.0.0",
+    "gatsby-plugin-sitemap": "^5.0.0",
+    "gatsby-transformer-remark": "^5.0.0",
+    "gatsby-source-filesystem": "^4.0.0",
+    "gatsby-remark-external-links": "^4.0.0",
+    "gatsby-remark-images": "^6.0.0",
+    "gatsby-remark-code-titles": "^1.1.0",
+    "gatsby-remark-prismjs": "^6.0.0",
+    "prismjs": "^1.27.0",
+    "gatsby-plugin-manifest": "^4.0.0",
+    "gatsby-plugin-offline": "^5.0.0",
+    "gatsby-plugin-google-analytics": "^4.0.0",
+    "gatsby-plugin-robots-txt": "^1.5.5"
+  }
+}
