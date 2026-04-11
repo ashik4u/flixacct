@@ -11,6 +11,9 @@ const StyledProjectsSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1240px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   h2 {
     font-size: clamp(24px, 5vw, var(--fz-heading));
@@ -27,13 +30,21 @@ const StyledProjectsSection = styled.section`
   .projects-grid {
     ${({ theme }) => theme.mixins.resetList};
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 15px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 40px;
     position: relative;
-    margin-top: 50px;
+    margin-top: 70px;
+
+    @media (max-width: 1280px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 
     @media (max-width: 1080px) {
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (max-width: 640px) {
+      grid-template-columns: 1fr;
     }
   }
 
@@ -45,15 +56,17 @@ const StyledProjectsSection = styled.section`
 
 const StyledProject = styled.li`
   position: relative;
-  cursor: default;
-  transition: var(--transition);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--light-navy);
+  ${({ theme }) => theme.mixins.boxShadow};
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 
   @media (prefers-reduced-motion: no-preference) {
     &:hover,
     &:focus-within {
-      .project-inner {
-        transform: translateY(-7px);
-      }
+      transform: translateY(-8px);
+      box-shadow: 0 20px 30px -15px var(--navy-shadow);
     }
   }
 
@@ -62,104 +75,141 @@ const StyledProject = styled.li`
     z-index: 1;
   }
 
-  .project-inner {
-    ${({ theme }) => theme.mixins.boxShadow};
-    ${({ theme }) => theme.mixins.flexBetween};
-    flex-direction: column;
-    align-items: flex-start;
+  .pThmb {
     position: relative;
-    height: 100%;
-    padding: 2rem 1.75rem;
-    border-radius: var(--border-radius);
-    background-color: var(--light-navy);
-    transition: var(--transition);
-    overflow: auto;
-  }
+    display: block;
+    aspect-ratio: 16 / 9;
+    background: var(--navy);
+    overflow: hidden;
 
-  .project-top {
-    ${({ theme }) => theme.mixins.flexBetween};
-    margin-bottom: 35px;
-
-    .folder {
-      color: var(--green);
-      svg {
-        width: 40px;
-        height: 40px;
-      }
+    &:before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(100, 255, 218, 0.08);
+      z-index: 1;
+      pointer-events: none;
     }
 
-    .project-links {
-      display: flex;
-      align-items: center;
-      margin-right: -10px;
-      color: var(--light-slate);
-
-      a {
-        ${({ theme }) => theme.mixins.flexCenter};
-        padding: 5px 7px;
-
-        &.external {
-          svg {
-            width: 22px;
-            height: 22px;
-            margin-top: -4px;
-          }
-        }
-
-        svg {
-          width: 20px;
-          height: 20px;
-        }
-      }
+    img,
+    .gatsby-image-wrapper {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
-  .project-title {
-    margin: 0 0 10px;
-    color: var(--lightest-slate);
-    font-size: var(--fz-xxl);
-
-    a {
-      position: static;
-
-      &:before {
-        content: '';
-        display: block;
-        position: absolute;
-        z-index: 0;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-      }
-    }
-  }
-
-  .project-description {
-    color: var(--light-slate);
-    font-size: 17px;
-
-    a {
-      ${({ theme }) => theme.mixins.inlineLink};
-    }
-  }
-
-  .project-tech-list {
+  .pCntn {
+    padding: 18px 20px 20px;
     display: flex;
-    align-items: flex-end;
-    flex-grow: 1;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .pHdr {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .pLbls {
+    display: flex;
     flex-wrap: wrap;
-    padding: 0;
-    margin: 20px 0 0 0;
-    list-style: none;
+    gap: 8px;
 
-    li {
+    a {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: transparent;
+      color: var(--green);
       font-family: var(--font-mono);
-      font-size: var(--fz-xxs);
-      line-height: 1.75;
+      font-size: 10px;
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border: 1px solid var(--green);
+      box-shadow: none;
 
-      &:not(:last-of-type) {
-        margin-right: 15px;
+      &:hover,
+      &:focus-visible {
+        transform: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .project-links {
+    display: flex;
+    gap: 8px;
+    color: var(--light-slate);
+
+    a {
+      ${({ theme }) => theme.mixins.flexCenter};
+      padding: 6px;
+
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  .project-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 4px;
+    border-top: 1px solid rgba(136, 146, 176, 0.12);
+    color: var(--light-slate);
+    font-family: var(--font-mono);
+    font-size: var(--fz-xxs);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .pTtl {
+    margin: 0;
+    font-size: clamp(18px, 2.1vw, 22px);
+    line-height: 1.25;
+    color: var(--lightest-slate);
+
+    a {
+      display: inline;
+      position: static;
+    }
+  }
+
+  .pSnpt {
+    color: var(--light-slate);
+    font-size: 15px;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .pInf {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    color: var(--light-slate);
+    font-family: var(--font-mono);
+    font-size: var(--fz-xxs);
+    padding-top: 6px;
+
+    .read-more {
+      color: var(--green);
+      font-size: 12px;
+      white-space: nowrap;
+
+      &:after {
+        display: none;
       }
     }
   }
@@ -168,22 +218,16 @@ const StyledProject = styled.li`
 const Projects = () => {
   const data = useStaticQuery(graphql`
     query {
-      projects: allMarkdownRemark(
-        filter: {
-          fileAbsolutePath: { regex: "/content/projects/" }
-          frontmatter: { showInProjects: { ne: false } }
-        }
-        sort: { fields: [frontmatter___date], order: DESC }
-      ) {
+      projects: allBloggerRssPost(sort: { fields: [pubDate], order: DESC }) {
         edges {
           node {
-            frontmatter {
-              title
-              tech
-              github
-              external
-            }
-            html
+            title
+            link
+            content
+            excerpt
+            pubDate
+            labels
+            imageUrl
           }
         }
       }
@@ -212,54 +256,50 @@ const Projects = () => {
   const projectsToShow = showMore ? projects : firstSix;
 
   const projectInner = node => {
-    const { frontmatter, html } = node;
-    const { github, external, title, tech } = frontmatter;
+    const { title, link, content, excerpt, pubDate, labels, imageUrl } = node;
+    const snippet = excerpt || content.replace(/<[^>]+>/g, '').slice(0, 180);
+    const published = pubDate
+      ? new Date(pubDate).toLocaleDateString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric',
+      })
+      : '';
 
     return (
-      <div className="project-inner">
-        <header>
-          <div className="project-top">
-            <div className="folder">
-              <Icon name="Folder" />
+      <>
+        <a className="pThmb" href={link} target="_blank" rel="noreferrer" aria-label={title}>
+          {imageUrl ? <img src={imageUrl} alt={title} loading="lazy" /> : null}
+        </a>
+
+        <div className="pCntn">
+          <div className="pHdr">
+            <div className="pLbls">
+              {labels && labels.slice(0, 1).map((label, i) => <span key={i}>{label}</span>)}
             </div>
             <div className="project-links">
-              {github && (
-                <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
-                  <Icon name="GitHub" />
-                </a>
-              )}
-              {external && (
-                <a
-                  href={external}
-                  aria-label="External Link"
-                  className="external"
-                  target="_blank"
-                  rel="noreferrer">
-                  <Icon name="External" />
-                </a>
-              )}
+              <a href={link} aria-label="Open post" target="_blank" rel="noreferrer">
+                <Icon name="External" />
+              </a>
             </div>
           </div>
 
-          <h3 className="project-title">
-            <a href={external} target="_blank" rel="noreferrer">
+          <h3 className="pTtl">
+            <a href={link} target="_blank" rel="noreferrer">
               {title}
             </a>
           </h3>
 
-          <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
-        </header>
+          <div className="pSnpt">{snippet}</div>
 
-        <footer>
-          {tech && (
-            <ul className="project-tech-list">
-              {tech.map((tech, i) => (
-                <li key={i}>{tech}</li>
-              ))}
-            </ul>
-          )}
-        </footer>
-      </div>
+          <div className="pInf">
+            <span>{published}</span>
+            <a className="read-more" href={link} target="_blank" rel="noreferrer">
+              Keep reading
+            </a>
+          </div>
+        </div>
+      </>
     );
   };
 

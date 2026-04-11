@@ -59,29 +59,25 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const one = <h1>Hey, welcome to</h1>;
+  const two = <h2 className="big-heading">Flixacct.</h2>;
+  const three = (
+    <h3 className="big-heading">
+      A place where technology becomes simple, useful, and easy to understand.
+    </h3>
+  );
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building accessible, human-centered products
-        at{' '}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
-        </a>
-        .
+        Technology is constantly evolving, and learning new skills can make everyday tasks faster
+        and easier. Our goal is to share helpful knowledge that saves time, solves problems, and
+        helps readers get the most out of their computers.
       </p>
     </>
   );
   const five = (
-    <a
-      className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
-      target="_blank"
-      rel="noreferrer">
-      Check out my course!
+    <a className="email-link" href="https://blog.flixacct.club/" target="_blank" rel="noreferrer">
+      Check out our Blog!
     </a>
   );
 

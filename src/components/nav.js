@@ -206,8 +206,12 @@ const Nav = ({ isHome }) => {
   );
 
   const ResumeLink = (
-    <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-      Resume
+    <a
+      className="resume-button"
+      href="https://blog.flixacct.club/"
+      target="_blank"
+      rel="noopener noreferrer">
+      Blog
     </a>
   );
 

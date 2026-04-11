@@ -1,0 +1,130 @@
+<svg width="100%" viewBox="0 0 1280 810" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">IPTV M3U Bot — Halcyon-style promo banner</title>
+  <desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">A Halcyon-themed promotional image for the ashik4u/iptv-m3u-bot GitHub project, showing a dark blue background, project title, description, and a terminal mockup.</desc>
+
+  <defs>
+    
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="800" fill="#1d2433" style="fill:rgb(29, 36, 51);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Subtle noise/grain overlay rows -->
+  <rect x="0" y="0" width="1280" height="800" fill="url(#grain)" opacity="0.03" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.03;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Header text area -->
+  <!-- Title -->
+  <text x="640" y="130" text-anchor="middle" font-family="'Inter', sans-serif" font-size="82" font-weight="700" fill="#FFD580" letter-spacing="-2" style="fill:rgb(255, 213, 128);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Inter, sans-serif;font-size:82px;font-weight:700;text-anchor:middle;dominant-baseline:auto">IPTV M3U Bot</text>
+
+  <!-- Subtitle -->
+  <text x="640" y="196" text-anchor="middle" font-family="'Fira Code', 'Courier New', monospace" font-size="18" fill="#a8b2d8" letter-spacing="1.5" style="fill:rgb(168, 178, 216);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, &quot;Courier New&quot;, monospace;font-size:18px;font-weight:400;text-anchor:middle;dominant-baseline:auto">
+    Fetch · Validate · Combine · Automate
+  </text>
+
+  <!-- Description line -->
+  <text x="640" y="244" text-anchor="middle" font-family="'Inter', sans-serif" font-size="16" fill="#6c7a9c" letter-spacing="0.3" style="fill:rgb(108, 122, 156);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Inter, sans-serif;font-size:16px;font-weight:400;text-anchor:middle;dominant-baseline:auto">
+    Fetches multiple IPTV M3U playlists, checks each stream, and combines working ones into a single .m3u
+  </text>
+
+  <!-- ===== Terminal Window ===== -->
+  <!-- Window frame -->
+  <rect x="80" y="290" width="1120" height="460" rx="10" fill="#161c2c" stroke="#2e3a55" stroke-width="1.5" style="fill:rgb(22, 28, 44);stroke:rgb(46, 58, 85);color:rgb(255, 255, 255);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Title bar -->
+  <rect x="80" y="290" width="1120" height="38" rx="10" fill="#1e2740" style="fill:rgb(30, 39, 64);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <rect x="80" y="310" width="1120" height="18" fill="#1e2740" style="fill:rgb(30, 39, 64);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Traffic lights -->
+  <circle cx="114" cy="309" r="7" fill="#FF5F57" style="fill:rgb(255, 95, 87);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="140" cy="309" r="7" fill="#FEBC2E" style="fill:rgb(254, 188, 46);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="166" cy="309" r="7" fill="#28C840" style="fill:rgb(40, 200, 64);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Tab label -->
+  <text x="640" y="314" text-anchor="middle" font-family="'Fira Code', monospace" font-size="13" fill="#8899bb" style="fill:rgb(136, 153, 187);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13px;font-weight:400;text-anchor:middle;dominant-baseline:auto">iptv-m3u-bot — python scripts/m3u_working_streams_combined.py</text>
+
+  <!-- Terminal content lines -->
+  <!-- Line 1 -->
+  <text x="120" y="368" font-family="'Fira Code', monospace" font-size="13.5" fill="#8899bb" style="fill:rgb(136, 153, 187);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">$</text>
+  <text x="138" y="368" font-family="'Fira Code', monospace" font-size="13.5" fill="#cdd6f4" style="fill:rgb(205, 214, 244);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">python scripts/m3u_working_streams_combined.py</text>
+
+  <!-- Line 2 -->
+  <text x="120" y="394" font-family="'Fira Code', monospace" font-size="13.5" fill="#89b4fa" style="fill:rgb(137, 180, 250);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">[INFO]</text>
+  <text x="183" y="394" font-family="'Fira Code', monospace" font-size="13.5" fill="#a8b2d8" style="fill:rgb(168, 178, 216);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">Loading feed sources from</text>
+  <text x="412" y="394" font-family="'Fira Code', monospace" font-size="13.5" fill="#FFD580" style="fill:rgb(255, 213, 128);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">data/feed.txt</text>
+  <text x="528" y="394" font-family="'Fira Code', monospace" font-size="13.5" fill="#a8b2d8" style="fill:rgb(168, 178, 216);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">...</text>
+
+  <!-- Line 3 -->
+  <text x="120" y="420" font-family="'Fira Code', monospace" font-size="13.5" fill="#89b4fa" style="fill:rgb(137, 180, 250);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">[INFO]</text>
+  <text x="183" y="420" font-family="'Fira Code', monospace" font-size="13.5" fill="#a8b2d8" style="fill:rgb(168, 178, 216);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">Fetching playlist:</text>
+  <text x="338" y="420" font-family="'Fira Code', monospace" font-size="13.5" fill="#a6e3a1" style="fill:rgb(166, 227, 161);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">https://iptv-org.github.io/iptv/index.m3u</text>
+
+  <!-- Line 4 -->
+  <text x="120" y="446" font-family="'Fira Code', monospace" font-size="13.5" fill="#89b4fa" style="fill:rgb(137, 180, 250);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">[INFO]</text>
+  <text x="183" y="446" font-family="'Fira Code', monospace" font-size="13.5" fill="#a8b2d8" style="fill:rgb(168, 178, 216);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">Parsed</text>
+  <text x="234" y="446" font-family="'Fira Code', monospace" font-size="13.5" fill="#FFD580" style="fill:rgb(255, 213, 128);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">3,842</text>
+  <text x="294" y="446" font-family="'Fira Code', monospace" font-size="13.5" fill="#a8b2d8" style="fill:rgb(168, 178, 216);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">streams. Checking availability with concurrency=50...</text>
+
+  <!-- Line 5 progress bar -->
+  <text x="120" y="472" font-family="'Fira Code', monospace" font-size="13.5" fill="#89b4fa" style="fill:rgb(137, 180, 250);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">[PROG]</text>
+  <text x="190" y="472" font-family="'Fira Code', monospace" font-size="13.5" fill="#cdd6f4" style="fill:rgb(205, 214, 244);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">[</text>
+  <!-- filled bar -->
+  <rect x="207" y="460" width="310" height="14" rx="2" fill="#FFD580" opacity="0.85" style="fill:rgb(255, 213, 128);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.85;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- remaining bar -->
+  <rect x="517" y="460" width="120" height="14" rx="2" fill="#2e3a55" style="fill:rgb(46, 58, 85);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="644" y="472" font-family="'Fira Code', monospace" font-size="13.5" fill="#cdd6f4" style="fill:rgb(205, 214, 244);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">]</text>
+  <text x="660" y="472" font-family="'Fira Code', monospace" font-size="13.5" fill="#a8b2d8" style="fill:rgb(168, 178, 216);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">72%</text>
+  <text x="700" y="472" font-family="'Fira Code', monospace" font-size="13.5" fill="#6c7a9c" style="fill:rgb(108, 122, 156);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">2,766 / 3,842</text>
+
+  <!-- Line 6 -->
+  <text x="120" y="498" font-family="'Fira Code', monospace" font-size="13.5" fill="#a6e3a1" style="fill:rgb(166, 227, 161);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">[OK]</text>
+  <text x="157" y="498" font-family="'Fira Code', monospace" font-size="13.5" fill="#a8b2d8" style="fill:rgb(168, 178, 216);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">Stream alive:</text>
+  <text x="289" y="498" font-family="'Fira Code', monospace" font-size="13.5" fill="#89dceb" style="fill:rgb(137, 220, 235);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">http://109.111.129.46:8080/live/user/pass/1234.ts</text>
+
+  <!-- Line 7 -->
+  <text x="120" y="524" font-family="'Fira Code', monospace" font-size="13.5" fill="#f38ba8" style="fill:rgb(243, 139, 168);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">[DEAD]</text>
+  <text x="178" y="524" font-family="'Fira Code', monospace" font-size="13.5" fill="#6c7a9c" style="fill:rgb(108, 122, 156);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">Timeout — skipping:</text>
+  <text x="348" y="524" font-family="'Fira Code', monospace" font-size="13.5" fill="#585e75" style="fill:rgb(88, 94, 117);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">http://dead-stream.example.com/live/stream.m3u8</text>
+
+  <!-- Line 8 -->
+  <text x="120" y="550" font-family="'Fira Code', monospace" font-size="13.5" fill="#a6e3a1" style="fill:rgb(166, 227, 161);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">[OK]</text>
+  <text x="157" y="550" font-family="'Fira Code', monospace" font-size="13.5" fill="#a8b2d8" style="fill:rgb(168, 178, 216);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">Stream alive:</text>
+  <text x="289" y="550" font-family="'Fira Code', monospace" font-size="13.5" fill="#89dceb" style="fill:rgb(137, 220, 235);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">http://185.44.22.11:1935/bbc_one/index.m3u8</text>
+
+  <!-- Line 9 -->
+  <text x="120" y="576" font-family="'Fira Code', monospace" font-size="13.5" fill="#FFD580" style="fill:rgb(255, 213, 128);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">[DONE]</text>
+  <text x="183" y="576" font-family="'Fira Code', monospace" font-size="13.5" fill="#cdd6f4" style="fill:rgb(205, 214, 244);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">Validated</text>
+  <text x="273" y="576" font-family="'Fira Code', monospace" font-size="13.5" fill="#FFD580" style="fill:rgb(255, 213, 128);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">3,842</text>
+  <text x="328" y="576" font-family="'Fira Code', monospace" font-size="13.5" fill="#cdd6f4" style="fill:rgb(205, 214, 244);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">streams —</text>
+  <text x="413" y="576" font-family="'Fira Code', monospace" font-size="13.5" fill="#a6e3a1" style="fill:rgb(166, 227, 161);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">2,241 alive</text>
+  <text x="519" y="576" font-family="'Fira Code', monospace" font-size="13.5" fill="#6c7a9c" style="fill:rgb(108, 122, 156);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">·</text>
+  <text x="534" y="576" font-family="'Fira Code', monospace" font-size="13.5" fill="#f38ba8" style="fill:rgb(243, 139, 168);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">1,601 dead</text>
+
+  <!-- Line 10 -->
+  <text x="120" y="602" font-family="'Fira Code', monospace" font-size="13.5" fill="#FFD580" style="fill:rgb(255, 213, 128);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">[SAVE]</text>
+  <text x="183" y="602" font-family="'Fira Code', monospace" font-size="13.5" fill="#cdd6f4" style="fill:rgb(205, 214, 244);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">Combined playlist written to</text>
+  <text x="428" y="602" font-family="'Fira Code', monospace" font-size="13.5" fill="#FFD580" style="fill:rgb(255, 213, 128);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">output/all.m3u</text>
+  <text x="560" y="602" font-family="'Fira Code', monospace" font-size="13.5" fill="#a6e3a1" style="fill:rgb(166, 227, 161);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">✓</text>
+
+  <!-- Line 11 — cursor -->
+  <text x="120" y="630" font-family="'Fira Code', monospace" font-size="13.5" fill="#8899bb" style="fill:rgb(136, 153, 187);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:13.5px;font-weight:400;text-anchor:start;dominant-baseline:auto">$</text>
+  <rect x="138" y="618" width="9" height="16" rx="1" fill="#FFD580" opacity="0.9" style="fill:rgb(255, 213, 128);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.129303;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+    <animate attributeName="opacity" values="0.9;0;0.9" dur="1.2s" repeatCount="indefinite" style="fill:rgb(255, 213, 128);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  </rect>
+
+  <!-- ===== Bottom stats bar ===== -->
+  <!-- 3 stat pills -->
+  <!-- Stars -->
+  <rect x="368" y="758" width="160" height="32" rx="16" fill="#1e2740" stroke="#2e3a55" stroke-width="1" style="fill:rgb(30, 39, 64);stroke:rgb(46, 58, 85);color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="448" y="779" text-anchor="middle" font-family="'Inter', sans-serif" font-size="13" fill="#FFD580" style="fill:rgb(255, 213, 128);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Inter, sans-serif;font-size:13px;font-weight:400;text-anchor:middle;dominant-baseline:auto">★  7 Stars</text>
+
+  <!-- Forks -->
+  <rect x="560" y="758" width="160" height="32" rx="16" fill="#1e2740" stroke="#2e3a55" stroke-width="1" style="fill:rgb(30, 39, 64);stroke:rgb(46, 58, 85);color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="640" y="779" text-anchor="middle" font-family="'Inter', sans-serif" font-size="13" fill="#a6e3a1" style="fill:rgb(166, 227, 161);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Inter, sans-serif;font-size:13px;font-weight:400;text-anchor:middle;dominant-baseline:auto">⑂  4 Forks</text>
+
+  <!-- Language -->
+  <rect x="752" y="758" width="160" height="32" rx="16" fill="#1e2740" stroke="#2e3a55" stroke-width="1" style="fill:rgb(30, 39, 64);stroke:rgb(46, 58, 85);color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="832" y="779" text-anchor="middle" font-family="'Inter', sans-serif" font-size="13" fill="#89b4fa" style="fill:rgb(137, 180, 250);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Inter, sans-serif;font-size:13px;font-weight:400;text-anchor:middle;dominant-baseline:auto">◉  Python 100%</text>
+
+  <!-- GitHub URL bottom -->
+  <text x="640" y="738" text-anchor="middle" font-family="'Fira Code', monospace" font-size="12.5" fill="#485070" letter-spacing="0.5" style="fill:rgb(72, 80, 112);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Fira Code&quot;, monospace;font-size:12.5px;font-weight:400;text-anchor:middle;dominant-baseline:auto">github.com/ashik4u/iptv-m3u-bot</text>
+</svg>

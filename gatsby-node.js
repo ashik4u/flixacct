@@ -6,6 +6,58 @@
 
 const path = require('path');
 const _ = require('lodash');
+const Parser = require('rss-parser');
+
+const BLOGGER_FEED_URL = 'https://blog.flixacct.club/feeds/posts/default?alt=rss';
+const parser = new Parser({
+  customFields: {
+    item: ['content:encoded', 'media:thumbnail'],
+  },
+});
+
+exports.sourceNodes = async ({ actions, createNodeId, createContentDigest, reporter }) => {
+  const { createNode } = actions;
+
+  try {
+    const feed = await parser.parseURL(BLOGGER_FEED_URL);
+
+    feed.items.forEach((item, index) => {
+      const title = item.title || 'Untitled post';
+      const link = item.link || '';
+      const content = item['content:encoded'] || item.content || item.contentSnippet || '';
+      const pubDate = item.isoDate || item.pubDate || null;
+      const image =
+        item.enclosure?.url ||
+        item['media:thumbnail']?.url ||
+        item.thumbnail ||
+        (content.match(/<img[^>]+src=["']([^"']+)["']/i)?.[1] ?? null);
+      const labels = (item.categories || []).map(category =>
+        typeof category === 'string'
+          ? category
+          : category?.label || category?._ || String(category),
+      );
+
+      createNode({
+        id: createNodeId(`blogger-post-${index}-${link || title}`),
+        parent: null,
+        children: [],
+        internal: {
+          type: 'BloggerRssPost',
+          contentDigest: createContentDigest(item),
+        },
+        title,
+        link,
+        content,
+        excerpt: item.contentSnippet || '',
+        pubDate,
+        imageUrl: image,
+        labels,
+      });
+    });
+  } catch (error) {
+    reporter.warn(`Unable to source Blogger RSS feed: ${error.message}`);
+  }
+};
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
