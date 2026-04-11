@@ -5,7 +5,7 @@ module.exports = {
     title: 'Flixacct',
     description:
       'A place where technology becomes simple, useful, and easy to understand.',
-    siteUrl: 'https//flixacct.club', // No trailing slash allowed!
+    siteUrl: 'https://flixacct.club', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '#',
   },
