@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Flixacct',
     description:
-      'Brittany Chiang is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
+      'A place where technology becomes simple, useful, and easy to understand.',
     siteUrl: 'flixacct.club, // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '#',
@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Brittany Chiang',
-        short_name: 'Brittany Chiang',
+        name: 'Flixacct',
+        short_name: 'Flixacct',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
