@@ -1,0 +1,812 @@
+
+> Flixacct@1.0.0 develop
+> gatsby develop -H 0.0.0.0
+
+
+ ERROR
+
+(node:24252) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated.
+ Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+
+warn Plugin gatsby-plugin-robots-txt is not compatible with your gatsby version
+3.15.0 - It requires gatsby@^5.0.0
+
+[2K[1A[2K[Gwarn "tracedSVG" plugin option for "gatsby-remark-images" is no longer
+supported. Blurred placeholder will be used. See
+https://gatsby.dev/tracesvg-removal/
+
+[2K[1A[2K[Gwarn Plugin gatsby-plugin-robots-txt is not compatible with your gatsby version
+3.15.0 - It requires gatsby@^5.0.0
+
+[2K[1A[2K[Gsuccess open and validate gatsby-configs, load plugins - 3.254s
+
+[2K[1A[2K[Gsuccess onPreInit - 0.009s
+
+[2K[1A[2K[Ginfo One or more of your plugins have changed since the last time you ran
+Gatsby. As
+a precaution, we're deleting your site's cache to ensure there's no stale data.
+
+[2K[1A[2K[Gsuccess initialize cache - 0.153s
+
+[2K[1A[2K[Gsuccess copy gatsby files - 0.233s
+
+[2K[1A[2K[Gsuccess Compiling Gatsby Functions - 1.194s
+
+[2K[1A[2K[Gsuccess onPreBootstrap - 1.238s
+
+[2K[1A[2K[Gsuccess createSchemaCustomization - 0.211s
+
+[2K[1A[2K[Gsuccess Checking for changed pages - 0.010s
+
+[2K[1A[2K[Gsuccess source and transform nodes - 2.524s
+
+[2K[1A[2K[Gsuccess building schema - 1.202s
+
+[2K[1A[2K[Gsuccess createPages - 0.091s
+
+[2K[1A[2K[Gsuccess createPagesStatefully - 0.168s
+
+[2K[1A[2K[Ginfo Total nodes: 289, SitePage nodes: 19 (use --verbose for breakdown)
+
+[2K[1A[2K[Gsuccess Checking for changed pages - 0.001s
+
+[2K[1A[2K[Gsuccess update schema - 0.224s
+
+[2K[1A[2K[Gsuccess write out redirect data - 0.006s
+
+[2K[1A[2K[Gsuccess Build manifest and related icons - 0.084s
+
+[2K[1A[2K[Gsuccess onPostBootstrap - 0.092s
+
+[2K[1A[2K[Ginfo bootstrap finished - 17.777s
+
+[2K[1A[2K[Gsuccess onPreExtractQueries - 0.001s
+
+[2K[1A[2K[Gsuccess extract queries from components - 3.337s
+
+[2K[1A[2K[Gsuccess write out requires - 0.097s
+
+[2K[1A[2K[G
+ ERROR
+
+(node:20136) MaxListenersExceededWarning: Possible EventEmitter memory leak
+detected. 11 end listeners added to [PassThrough]. MaxListeners is 10. Use
+emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[2K[1A[2K[G
+ ERROR
+
+(node:20136) MaxListenersExceededWarning: Possible EventEmitter memory leak
+detected. 11 end listeners added to [PassThrough]. MaxListeners is 10. Use
+emitter.setMaxListeners() to increase limit
+
+
+[2K[1A[2K[G
+ ERROR
+
+(node:20136) MaxListenersExceededWarning: Possible EventEmitter memory leak
+detected. 11 end listeners added to [PassThrough]. MaxListeners is 10. Use
+emitter.setMaxListeners() to increase limit
+
+
+[2K[1A[2K[Gsuccess run static queries - 0.180s - 4/4 22.21/s
+
+[2K[1A[2K[Gsuccess run page queries - 0.009s - 3/3 316.48/s
+
+[2K[1A[2K[G⠀
+
+[2K[1A[2K[GYou can now view Flixacct in the browser.
+
+[2K[1A[2K[G⠀
+
+[2K[1A[2K[G  Local:            http://localhost:8000/
+
+[2K[1A[2K[G  On Your Network:  http://192.168.0.111:8000/
+
+[2K[1A[2K[G⠀
+
+[2K[1A[2K[GView GraphiQL, an in-browser IDE, to explore your site's data and schema
+
+[2K[1A[2K[G⠀
+
+[2K[1A[2K[G  Local:            http://localhost:8000/___graphql
+
+[2K[1A[2K[G  On Your Network:  http://192.168.0.111:8000/___graphql
+
+[2K[1A[2K[G⠀
+
+[2K[1A[2K[GNote that the development build is not optimized.
+
+[2K[1A[2K[GTo create a production build, use gatsby build
+
+[2K[1A[2K[G⠀
+
+[2K[1A[2K[Gsuccess Building development bundle - 24.772s
+
+[2K[1A[2K[Gsuccess Writing page-data.json files to public directory - 0.158s - 3/18
+114.06/s
+
+[2K[1A[2K[Gsuccess Caching HTML renderer compilation - 17.546s
+
+[2K[1A[2K[Ginfo changed file at E:\DevDrive\flixacct-1\content\featured\Clipboard Rewriter
+GenAI\index.md
+
+[2K[1A[2K[Ginfo changed file at E:\DevDrive\flixacct-1\content\featured\IPTV M3U
+Bot\index.md
+
+[2K[1A[2K[Ginfo changed file at E:\DevDrive\flixacct-1\content\featured\MPV Single
+Instance\index.md
+
+[2K[1A[2K[Ginfo changed file at E:\DevDrive\flixacct-1\content\jobs\Flixacct Blog\index.md
+
+[2K[1A[2K[Ginfo changed file at E:\DevDrive\flixacct-1\content\jobs\Flixacct Media\index.md
+
+[2K[1A[2K[Ginfo changed file at E:\DevDrive\flixacct-1\content\jobs\Github\index.md
+
+[2K[1A[2K[Gwarn develop process needs to be restarted to apply the changes to
+gatsby-node.js
+
+[2K[1A[2K[Gsuccess building schema - 0.889s
+
+[2K[1A[2K[Gsuccess createPages - 0.043s
+
+[2K[1A[2K[Ginfo Total nodes: 290, SitePage nodes: 19 (use --verbose for breakdown)
+
+[2K[1A[2K[Gsuccess Checking for changed pages - 0.001s
+
+[2K[1A[2K[Gsuccess update schema - 0.150s
+
+[2K[1A[2K[Gsuccess onPreExtractQueries - 0.001s
+
+[2K[1A[2K[Gsuccess extract queries from components - 0.444s
+
+[2K[1A[2K[Gsuccess write out requires - 0.001s
+
+[2K[1A[2K[Gsuccess run static queries - 0.075s - 2/2 26.62/s
+
+[2K[1A[2K[Gwarn `isModuleDeclaration` has been deprecated, please migrate to
+`isImportOrExportDeclaration`
+    at isModuleDeclaration (E:\DevDrive\flixacct-1\node_modules\@babel\types\lib
+\validators\generated\index.js:2793:35)
+    at PluginPass.Program
+(E:\DevDrive\flixacct-1\node_modules\babel-plugin-lodash\lib\index.js:102:44)
+
+[2K[1A[2K[Gsuccess Re-building development bundle - 2.460s
+
+[2K[1A[2K[Gsuccess Writing page-data.json files to public directory - 0.027s - 0/15
+561.09/s
+
+[2K[1A[2K[Ginfo deleted directory at E:\DevDrive\flixacct-1\content\featured\Clipboard
+Rewriter GenAI
+
+[2K[1A[2K[Ginfo deleted directory at E:\DevDrive\flixacct-1\content\featured\IPTV M3U Bot
+
+[2K[1A[2K[Ginfo deleted directory at E:\DevDrive\flixacct-1\content\featured\MPV Single
+Instance
+
+[2K[1A[2K[Ginfo deleted directory at E:\DevDrive\flixacct-1\content\jobs\Flixacct Blog
+
+[2K[1A[2K[Ginfo deleted directory at E:\DevDrive\flixacct-1\content\jobs\Flixacct Media
+
+[2K[1A[2K[Gwarn develop process needs to be restarted to apply the changes to
+gatsby-node.js
+
+[2K[1A[2K[Ginfo deleted directory at E:\DevDrive\flixacct-1\content\jobs\Github
+
+[2K[1A[2K[Ginfo deleted directory at E:\DevDrive\flixacct-1\content\jobs
+
+[2K[1A[2K[Ginfo deleted file at E:\DevDrive\flixacct-1\content\featured\Clipboard Rewriter
+GenAI\clipboard_rewriter.png
+
+[2K[1A[2K[Ginfo deleted file at E:\DevDrive\flixacct-1\content\featured\Clipboard Rewriter
+GenAI\demo.png
+
+[2K[1A[2K[Ginfo deleted file at E:\DevDrive\flixacct-1\content\featured\Clipboard Rewriter
+GenAI\index.md
+
+[2K[1A[2K[Ginfo deleted file at E:\DevDrive\flixacct-1\content\featured\IPTV M3U
+Bot\demo.png
+
+[2K[1A[2K[Ginfo deleted file at E:\DevDrive\flixacct-1\content\featured\IPTV M3U
+Bot\halcyon.png
+
+[2K[1A[2K[Ginfo deleted file at E:\DevDrive\flixacct-1\content\featured\IPTV M3U
+Bot\index.md
+
+[2K[1A[2K[Ginfo deleted file at E:\DevDrive\flixacct-1\content\featured\IPTV M3U
+Bot\iptv_m3u_bot.png
+
+[2K[1A[2K[Ginfo deleted file at E:\DevDrive\flixacct-1\content\featured\IPTV M3U
+Bot\iptv_m3u_bot.svg
+
+[2K[1A[2K[Ginfo deleted file at E:\DevDrive\flixacct-1\content\featured\MPV Single
+Instance\course-card.png
+
+[2K[1A[2K[Ginfo deleted file at E:\DevDrive\flixacct-1\content\featured\MPV Single
+Instance\demo.png
+
+[2K[1A[2K[Ginfo deleted file at E:\DevDrive\flixacct-1\content\featured\MPV Single
+Instance\index.md
+
+[2K[1A[2K[Ginfo deleted file at E:\DevDrive\flixacct-1\content\featured\MPV Single
+Instance\mpv_single_instance.png
+
+[2K[1A[2K[Ginfo deleted file at E:\DevDrive\flixacct-1\content\jobs\Flixacct Blog\index.md
+
+[2K[1A[2K[Ginfo deleted file at E:\DevDrive\flixacct-1\content\jobs\Flixacct Media\index.md
+
+[2K[1A[2K[Ginfo deleted file at E:\DevDrive\flixacct-1\content\jobs\Github\index.md
+
+[2K[1A[2K[Ginfo deleted file at
+E:\DevDrive\flixacct-1\src\images\boliviainteligente-KoJVMz2DjJ4-unsplash.jpg
+
+[2K[1A[2K[Ginfo added directory at E:\DevDrive\flixacct-1\content\featured\HalcyonTheme
+
+[2K[1A[2K[Ginfo added directory at E:\DevDrive\flixacct-1\content\featured\SpotifyProfileV2
+
+[2K[1A[2K[Ginfo added directory at E:\DevDrive\flixacct-1\content\featured\SpotifyProfile
+
+[2K[1A[2K[Ginfo added directory at E:\DevDrive\flixacct-1\content\jobs
+
+[2K[1A[2K[Ginfo added directory at E:\DevDrive\flixacct-1\content\jobs\Mullen
+
+[2K[1A[2K[Ginfo added directory at E:\DevDrive\flixacct-1\content\jobs\Apple
+
+[2K[1A[2K[Ginfo added directory at E:\DevDrive\flixacct-1\content\jobs\Scout
+
+[2K[1A[2K[Ginfo added directory at E:\DevDrive\flixacct-1\content\jobs\Upstatement
+
+[2K[1A[2K[Ginfo added directory at E:\DevDrive\flixacct-1\content\jobs\Starry
+
+[2K[1A[2K[Ginfo added file at E:\DevDrive\flixacct-1\content\featured\HalcyonTheme\demo.png
+
+[2K[1A[2K[Ginfo added file at
+E:\DevDrive\flixacct-1\content\featured\HalcyonTheme\halcyon.png
+
+[2K[1A[2K[Ginfo added file at E:\DevDrive\flixacct-1\content\featured\HalcyonTheme\index.md
+
+[2K[1A[2K[Ginfo added file at
+E:\DevDrive\flixacct-1\content\featured\SpotifyProfileV2\course-card.png
+
+[2K[1A[2K[Ginfo added file at
+E:\DevDrive\flixacct-1\content\featured\SpotifyProfileV2\demo.png
+
+[2K[1A[2K[Ginfo added file at
+E:\DevDrive\flixacct-1\content\featured\SpotifyProfileV2\index.md
+
+[2K[1A[2K[Ginfo added file at
+E:\DevDrive\flixacct-1\content\featured\SpotifyProfile\demo.png
+
+[2K[1A[2K[Ginfo added file at
+E:\DevDrive\flixacct-1\content\featured\SpotifyProfile\index.md
+
+[2K[1A[2K[Ginfo added file at E:\DevDrive\flixacct-1\content\jobs\Mullen\index.md
+
+[2K[1A[2K[Ginfo added file at E:\DevDrive\flixacct-1\content\jobs\Apple\index.md
+
+[2K[1A[2K[Ginfo added file at E:\DevDrive\flixacct-1\content\jobs\Scout\index.md
+
+[2K[1A[2K[Ginfo added file at E:\DevDrive\flixacct-1\content\jobs\Upstatement\index.md
+
+[2K[1A[2K[Ginfo added file at E:\DevDrive\flixacct-1\content\jobs\Starry\index.md
+
+[2K[1A[2K[Gsuccess building schema - 0.722s
+
+[2K[1A[2K[Gsuccess createPages - 0.045s
+
+[2K[1A[2K[Ginfo Total nodes: 287, SitePage nodes: 19 (use --verbose for breakdown)
+
+[2K[1A[2K[Gsuccess Checking for changed pages - 0.001s
+
+[2K[1A[2K[Gsuccess update schema - 0.119s
+
+[2K[1A[2K[Gsuccess onPreExtractQueries - 0.001s
+
+[2K[1A[2K[Gsuccess extract queries from components - 0.420s
+
+[2K[1A[2K[Gsuccess write out requires - 0.001s
+
+[2K[1A[2K[G
+ ERROR
+
+(node:20136) MaxListenersExceededWarning: Possible EventEmitter memory leak
+detected. 11 end listeners added to [PassThrough]. MaxListeners is 10. Use
+emitter.setMaxListeners() to increase limit
+
+
+[2K[1A[2K[G
+ ERROR
+
+(node:20136) MaxListenersExceededWarning: Possible EventEmitter memory leak
+detected. 11 end listeners added to [PassThrough]. MaxListeners is 10. Use
+emitter.setMaxListeners() to increase limit
+
+
+[2K[1A[2K[G
+ ERROR
+
+(node:20136) MaxListenersExceededWarning: Possible EventEmitter memory leak
+detected. 11 end listeners added to [PassThrough]. MaxListeners is 10. Use
+emitter.setMaxListeners() to increase limit
+
+
+[2K[1A[2K[Gsuccess run static queries - 0.332s - 3/3 9.03/s
+
+[2K[1A[2K[Gsuccess Re-building development bundle - 1.391s
+
+[2K[1A[2K[Gsuccess Writing page-data.json files to public directory - 0.105s - 2/18
+171.01/s
+
+[2K[1A[2K[Ginfo deleted directory at E:\DevDrive\flixacct-1\content\featured\HalcyonTheme
+
+[2K[1A[2K[Ginfo deleted directory at E:\DevDrive\flixacct-1\content\featured\SpotifyProfile
+
+[2K[1A[2K[Ginfo deleted directory at E:\DevDrive\flixacct-1\content\jobs\Mullen
+
+[2K[1A[2K[Ginfo deleted directory at E:\DevDrive\flixacct-1\content\jobs\Apple
+
+[2K[1A[2K[Ginfo deleted directory at E:\DevDrive\flixacct-1\content\jobs\Scout
+
+[2K[1A[2K[Ginfo deleted directory at E:\DevDrive\flixacct-1\content\jobs\Upstatement
+
+[2K[1A[2K[Ginfo deleted directory at E:\DevDrive\flixacct-1\content\jobs\Starry
+
+[2K[1A[2K[Ginfo deleted directory at
+E:\DevDrive\flixacct-1\content\featured\SpotifyProfileV2
+
+[2K[1A[2K[Ginfo deleted directory at E:\DevDrive\flixacct-1\content\jobs
+
+[2K[1A[2K[Ginfo deleted file at
+E:\DevDrive\flixacct-1\content\featured\HalcyonTheme\demo.png
+
+[2K[1A[2K[Ginfo deleted file at
+E:\DevDrive\flixacct-1\content\featured\HalcyonTheme\halcyon.png
+
+[2K[1A[2K[Ginfo deleted file at
+E:\DevDrive\flixacct-1\content\featured\HalcyonTheme\index.md
+
+[2K[1A[2K[Ginfo deleted file at
+E:\DevDrive\flixacct-1\content\featured\SpotifyProfile\demo.png
+[2K[1A[2K[G
+warn develop process needs to be restarted to apply the changes to
+gatsby-node.js
+
+[2K[1A[2K[Ginfo deleted file at
+E:\DevDrive\flixacct-1\content\featured\SpotifyProfile\index.md
+
+[2K[1A[2K[Ginfo deleted file at
+E:\DevDrive\flixacct-1\content\featured\SpotifyProfileV2\course-card.png
+
+[2K[1A[2K[Ginfo deleted file at
+E:\DevDrive\flixacct-1\content\featured\SpotifyProfileV2\demo.png
+
+[2K[1A[2K[Ginfo deleted file at
+E:\DevDrive\flixacct-1\content\featured\SpotifyProfileV2\index.md
+
+[2K[1A[2K[Ginfo deleted file at E:\DevDrive\flixacct-1\content\jobs\Apple\index.md
+
+[2K[1A[2K[Ginfo deleted file at E:\DevDrive\flixacct-1\content\jobs\Mullen\index.md
+
+[2K[1A[2K[Ginfo deleted file at E:\DevDrive\flixacct-1\content\jobs\Scout\index.md
+
+[2K[1A[2K[Ginfo deleted file at E:\DevDrive\flixacct-1\content\jobs\Upstatement\index.md
+
+[2K[1A[2K[Ginfo deleted file at E:\DevDrive\flixacct-1\content\jobs\Starry\index.md
+
+[2K[1A[2K[Ginfo added file at
+E:\DevDrive\flixacct-1\src\images\boliviainteligente-KoJVMz2DjJ4-unsplash.jpg
+
+[2K[1A[2K[Ginfo added directory at E:\DevDrive\flixacct-1\content\featured\Clipboard
+Rewriter GenAI
+
+[2K[1A[2K[Ginfo added directory at E:\DevDrive\flixacct-1\content\featured\IPTV M3U Bot
+
+[2K[1A[2K[Ginfo added directory at E:\DevDrive\flixacct-1\content\jobs
+
+[2K[1A[2K[Ginfo added directory at E:\DevDrive\flixacct-1\content\jobs\Flixacct Blog
+
+[2K[1A[2K[Ginfo added directory at E:\DevDrive\flixacct-1\content\featured\MPV Single
+Instance
+
+[2K[1A[2K[Ginfo added file at E:\DevDrive\flixacct-1\content\featured\Clipboard Rewriter
+GenAI\clipboard_rewriter.png
+
+[2K[1A[2K[Ginfo added file at E:\DevDrive\flixacct-1\content\featured\Clipboard Rewriter
+GenAI\demo.png
+
+[2K[1A[2K[Ginfo added file at E:\DevDrive\flixacct-1\content\featured\Clipboard Rewriter
+GenAI\index.md
+
+[2K[1A[2K[Ginfo added file at E:\DevDrive\flixacct-1\content\featured\IPTV M3U Bot\demo.png
+
+[2K[1A[2K[Ginfo added file at E:\DevDrive\flixacct-1\content\featured\IPTV M3U
+Bot\halcyon.png
+
+[2K[1A[2K[Ginfo added file at E:\DevDrive\flixacct-1\content\featured\IPTV M3U Bot\index.md
+
+[2K[1A[2K[Ginfo added file at E:\DevDrive\flixacct-1\content\featured\IPTV M3U
+Bot\iptv_m3u_bot.png
+
+[2K[1A[2K[Ginfo added file at E:\DevDrive\flixacct-1\content\featured\IPTV M3U
+Bot\iptv_m3u_bot.svg
+
+[2K[1A[2K[Ginfo added file at E:\DevDrive\flixacct-1\content\jobs\Flixacct Blog\index.md
+
+[2K[1A[2K[Ginfo added file at E:\DevDrive\flixacct-1\content\featured\MPV Single
+Instance\course-card.png
+
+[2K[1A[2K[Ginfo added file at E:\DevDrive\flixacct-1\content\featured\MPV Single
+Instance\demo.png
+
+[2K[1A[2K[Ginfo added file at E:\DevDrive\flixacct-1\content\featured\MPV Single
+Instance\index.md
+
+[2K[1A[2K[Ginfo added file at E:\DevDrive\flixacct-1\content\featured\MPV Single
+Instance\mpv_single_instance.png
+
+[2K[1A[2K[Ginfo added directory at E:\DevDrive\flixacct-1\content\jobs\Flixacct Media
+
+[2K[1A[2K[Ginfo added directory at E:\DevDrive\flixacct-1\content\jobs\Github
+
+[2K[1A[2K[Ginfo added file at E:\DevDrive\flixacct-1\content\jobs\Flixacct Media\index.md
+
+[2K[1A[2K[Ginfo added file at E:\DevDrive\flixacct-1\content\jobs\Github\index.md
+
+[2K[1A[2K[Gsuccess building schema - 0.915s
+
+[2K[1A[2K[Gsuccess createPages - 0.046s
+
+[2K[1A[2K[Ginfo Total nodes: 291, SitePage nodes: 19 (use --verbose for breakdown)
+
+[2K[1A[2K[Gsuccess Checking for changed pages - 0.001s
+
+[2K[1A[2K[Gsuccess update schema - 0.089s
+
+[2K[1A[2K[Gsuccess onPreExtractQueries - 0.001s
+
+[2K[1A[2K[G
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "location" on type "MarkdownRemarkFrontmatter".
+
+If you don't expect "location" to exist on the type "MarkdownRemarkFrontmatter"
+it is most likely a typo.
+However, if you expect "location" to exist there are a couple of solutions to
+common problems:
+
+- If you added a new data source and/or changed something inside
+gatsby-node.js/gatsby-config.js, please try a restart of your development server
+- The field might be accessible in another subfield, please try your query in
+GraphiQL and use the GraphiQL explorer to see which fields you can query and
+what shape they have
+- You want to optionally use your field "location" and right now it is not used
+anywhere. Therefore Gatsby can't infer the type and add it to the GraphQL
+schema. A quick fix is to add at least one entry with that field ("dummy
+content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use
+optional fields. This way you don't have to add the mentioned "dummy content".
+Visit our docs to learn how you can define the schema for
+"MarkdownRemarkFrontmatter":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#
+creating-type-definitions
+
+File: src\components\sections\jobs.js:179:15
+
+
+[2K[1A[2K[G
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "range" on type "MarkdownRemarkFrontmatter".
+
+If you don't expect "range" to exist on the type "MarkdownRemarkFrontmatter" it
+is most likely a typo.
+However, if you expect "range" to exist there are a couple of solutions to
+common problems:
+
+- If you added a new data source and/or changed something inside
+gatsby-node.js/gatsby-config.js, please try a restart of your development server
+- The field might be accessible in another subfield, please try your query in
+GraphiQL and use the GraphiQL explorer to see which fields you can query and
+what shape they have
+- You want to optionally use your field "range" and right now it is not used
+anywhere. Therefore Gatsby can't infer the type and add it to the GraphQL
+schema. A quick fix is to add at least one entry with that field ("dummy
+content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use
+optional fields. This way you don't have to add the mentioned "dummy content".
+Visit our docs to learn how you can define the schema for
+"MarkdownRemarkFrontmatter":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#
+creating-type-definitions
+
+File: src\components\sections\jobs.js:180:15
+
+
+[2K[1A[2K[G
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "url" on type "MarkdownRemarkFrontmatter".
+
+If you don't expect "url" to exist on the type "MarkdownRemarkFrontmatter" it is
+ most likely a typo.
+However, if you expect "url" to exist there are a couple of solutions to common
+problems:
+
+- If you added a new data source and/or changed something inside
+gatsby-node.js/gatsby-config.js, please try a restart of your development server
+- The field might be accessible in another subfield, please try your query in
+GraphiQL and use the GraphiQL explorer to see which fields you can query and
+what shape they have
+- You want to optionally use your field "url" and right now it is not used
+anywhere. Therefore Gatsby can't infer the type and add it to the GraphQL
+schema. A quick fix is to add at least one entry with that field ("dummy
+content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use
+optional fields. This way you don't have to add the mentioned "dummy content".
+Visit our docs to learn how you can define the schema for
+"MarkdownRemarkFrontmatter":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#
+creating-type-definitions
+
+File: src\components\sections\jobs.js:181:15
+
+
+[2K[1A[2K[G
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "cover" on type "MarkdownRemarkFrontmatter".
+
+If you don't expect "cover" to exist on the type "MarkdownRemarkFrontmatter" it
+is most likely a typo.
+However, if you expect "cover" to exist there are a couple of solutions to
+common problems:
+
+- If you added a new data source and/or changed something inside
+gatsby-node.js/gatsby-config.js, please try a restart of your development server
+- The field might be accessible in another subfield, please try your query in
+GraphiQL and use the GraphiQL explorer to see which fields you can query and
+what shape they have
+- You want to optionally use your field "cover" and right now it is not used
+anywhere. Therefore Gatsby can't infer the type and add it to the GraphQL
+schema. A quick fix is to add at least one entry with that field ("dummy
+content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use
+optional fields. This way you don't have to add the mentioned "dummy content".
+Visit our docs to learn how you can define the schema for
+"MarkdownRemarkFrontmatter":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#
+creating-type-definitions
+
+File: src\components\sections\featured.js:317:15
+
+
+[2K[1A[2K[G
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "cta" on type "MarkdownRemarkFrontmatter".
+
+If you don't expect "cta" to exist on the type "MarkdownRemarkFrontmatter" it is
+ most likely a typo.
+However, if you expect "cta" to exist there are a couple of solutions to common
+problems:
+
+- If you added a new data source and/or changed something inside
+gatsby-node.js/gatsby-config.js, please try a restart of your development server
+- The field might be accessible in another subfield, please try your query in
+GraphiQL and use the GraphiQL explorer to see which fields you can query and
+what shape they have
+- You want to optionally use your field "cta" and right now it is not used
+anywhere. Therefore Gatsby can't infer the type and add it to the GraphQL
+schema. A quick fix is to add at least one entry with that field ("dummy
+content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use
+optional fields. This way you don't have to add the mentioned "dummy content".
+Visit our docs to learn how you can define the schema for
+"MarkdownRemarkFrontmatter":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#
+creating-type-definitions
+
+File: src\components\sections\featured.js:325:15
+
+
+[2K[1A[2K[Gfailed extract queries from components - 0.233s
+
+[2K[1A[2K[Gsuccess write out requires - 0.001s
+
+[2K[1A[2K[Gsuccess run static queries - 0.007s - 1/1 134.27/s
+
+[2K[1A[2K[Gsuccess Re-building development bundle - 1.546s
+
+[2K[1A[2K[Gsuccess Writing page-data.json files to public directory - 0.059s - 2/18
+306.16/s
+
+[2K[1A[2K[Gsuccess onPreExtractQueries - 0.003s
+
+[2K[1A[2K[G
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "cover" on type "MarkdownRemarkFrontmatter".
+
+If you don't expect "cover" to exist on the type "MarkdownRemarkFrontmatter" it
+is most likely a typo.
+However, if you expect "cover" to exist there are a couple of solutions to
+common problems:
+
+- If you added a new data source and/or changed something inside
+gatsby-node.js/gatsby-config.js, please try a restart of your development server
+- The field might be accessible in another subfield, please try your query in
+GraphiQL and use the GraphiQL explorer to see which fields you can query and
+what shape they have
+- You want to optionally use your field "cover" and right now it is not used
+anywhere. Therefore Gatsby can't infer the type and add it to the GraphQL
+schema. A quick fix is to add at least one entry with that field ("dummy
+content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use
+optional fields. This way you don't have to add the mentioned "dummy content".
+Visit our docs to learn how you can define the schema for
+"MarkdownRemarkFrontmatter":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#
+creating-type-definitions
+
+File: src\components\sections\featured.js:317:15
+
+
+[2K[1A[2K[G
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "cta" on type "MarkdownRemarkFrontmatter".
+
+If you don't expect "cta" to exist on the type "MarkdownRemarkFrontmatter" it is
+ most likely a typo.
+However, if you expect "cta" to exist there are a couple of solutions to common
+problems:
+
+- If you added a new data source and/or changed something inside
+gatsby-node.js/gatsby-config.js, please try a restart of your development server
+- The field might be accessible in another subfield, please try your query in
+GraphiQL and use the GraphiQL explorer to see which fields you can query and
+what shape they have
+- You want to optionally use your field "cta" and right now it is not used
+anywhere. Therefore Gatsby can't infer the type and add it to the GraphQL
+schema. A quick fix is to add at least one entry with that field ("dummy
+content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use
+optional fields. This way you don't have to add the mentioned "dummy content".
+Visit our docs to learn how you can define the schema for
+"MarkdownRemarkFrontmatter":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#
+creating-type-definitions
+
+File: src\components\sections\featured.js:325:15
+
+
+[2K[1A[2K[G
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "location" on type "MarkdownRemarkFrontmatter".
+
+If you don't expect "location" to exist on the type "MarkdownRemarkFrontmatter"
+it is most likely a typo.
+However, if you expect "location" to exist there are a couple of solutions to
+common problems:
+
+- If you added a new data source and/or changed something inside
+gatsby-node.js/gatsby-config.js, please try a restart of your development server
+- The field might be accessible in another subfield, please try your query in
+GraphiQL and use the GraphiQL explorer to see which fields you can query and
+what shape they have
+- You want to optionally use your field "location" and right now it is not used
+anywhere. Therefore Gatsby can't infer the type and add it to the GraphQL
+schema. A quick fix is to add at least one entry with that field ("dummy
+content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use
+optional fields. This way you don't have to add the mentioned "dummy content".
+Visit our docs to learn how you can define the schema for
+"MarkdownRemarkFrontmatter":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#
+creating-type-definitions
+
+File: src\components\sections\jobs.js:179:15
+
+
+[2K[1A[2K[G
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "range" on type "MarkdownRemarkFrontmatter".
+
+If you don't expect "range" to exist on the type "MarkdownRemarkFrontmatter" it
+is most likely a typo.
+However, if you expect "range" to exist there are a couple of solutions to
+common problems:
+
+- If you added a new data source and/or changed something inside
+gatsby-node.js/gatsby-config.js, please try a restart of your development server
+- The field might be accessible in another subfield, please try your query in
+GraphiQL and use the GraphiQL explorer to see which fields you can query and
+what shape they have
+- You want to optionally use your field "range" and right now it is not used
+anywhere. Therefore Gatsby can't infer the type and add it to the GraphQL
+schema. A quick fix is to add at least one entry with that field ("dummy
+content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use
+optional fields. This way you don't have to add the mentioned "dummy content".
+Visit our docs to learn how you can define the schema for
+"MarkdownRemarkFrontmatter":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#
+creating-type-definitions
+
+File: src\components\sections\jobs.js:180:15
+
+
+[2K[1A[2K[G
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "url" on type "MarkdownRemarkFrontmatter".
+
+If you don't expect "url" to exist on the type "MarkdownRemarkFrontmatter" it is
+ most likely a typo.
+However, if you expect "url" to exist there are a couple of solutions to common
+problems:
+
+- If you added a new data source and/or changed something inside
+gatsby-node.js/gatsby-config.js, please try a restart of your development server
+- The field might be accessible in another subfield, please try your query in
+GraphiQL and use the GraphiQL explorer to see which fields you can query and
+what shape they have
+- You want to optionally use your field "url" and right now it is not used
+anywhere. Therefore Gatsby can't infer the type and add it to the GraphQL
+schema. A quick fix is to add at least one entry with that field ("dummy
+content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use
+optional fields. This way you don't have to add the mentioned "dummy content".
+Visit our docs to learn how you can define the schema for
+"MarkdownRemarkFrontmatter":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#
+creating-type-definitions
+
+File: src\components\sections\jobs.js:181:15
+
+
+[2K[1A[2K[Gfailed extract queries from components - 0.308s
+
+[2K[1A[2K[Gsuccess write out requires - 0.001s
+
+[2K[1A[2K[Gsuccess Re-building development bundle - 0.354s
+
+[2K[1A[2K[Gsuccess Writing page-data.json files to public directory - 0.025s - 0/16
+627.96/s
+
