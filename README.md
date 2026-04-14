@@ -1,87 +1,113 @@
-<div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/bchiang7/v4/main/src/images/logo.png" width="100" />
-</div>
-<h1 align="center">
-  brittanychiang.com - v4
-</h1>
-<p align="center">
-  The fourth iteration of <a href="https://brittanychiang.com" target="_blank">brittanychiang.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
-</p>
-<p align="center">
-  Previous iterations:
-  <a href="https://github.com/bchiang7/v1" target="_blank">v1</a>,
-  <a href="https://github.com/bchiang7/v2" target="_blank">v2</a>,
-  <a href="https://github.com/bchiang7/bchiang7.github.io" target="_blank">v3</a>
-</p>
-<p align="center">
-  <a href="https://app.netlify.com/sites/brittanychiang/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/1963b488-7b78-48c9-9e2d-6fb5e47ab3af/deploy-status" alt="Netlify Status" />
-  </a>
-</p>
+# Flixacct
 
-![demo](https://raw.githubusercontent.com/bchiang7/v4/main/src/images/demo.png)
+Flixacct is a Gatsby-powered website for showcasing projects, publishing technical content, and highlighting the broader Flixacct ecosystem.
 
-## 🚨 Forking this repo (please read!)
+The site combines:
 
-Many people have contacted me asking me if they can use this code for their own website, and the answer to that question is usually **yes, with attribution**.
+- A branded landing page with section-based content
+- Featured project entries stored as Markdown
+- A local "Pensieve" blog stored in Markdown
+- An external Blogger RSS feed that is sourced at build time and displayed on the site
 
-I value keeping my site open source, but as you all know, _**plagiarism is bad**_. It's always disheartening whenever I find that someone has copied my site without giving me credit. I spent a non-trivial amount of effort building and designing this iteration of my website, and I am proud of it! All I ask of you all is to not claim this effort as your own.
+## Stack
 
-Please also note that I did not build this site with the intention of it being a starter theme, so if you have questions about implementation, please refer to the [Gatsby docs](https://www.gatsbyjs.org/docs/).
+- Gatsby 4
+- React 17
+- styled-components
+- gatsby-transformer-remark
+- gatsby-plugin-image / sharp
+- rss-parser
 
-### TL;DR
+## Local Development
 
-Yes, you can fork this repo. Please give me proper credit by linking back to [brittanychiang.com](https://brittanychiang.com). Thanks!
-
-## 🛠 Installation & Set Up
-
-1. Install the Gatsby CLI
-
-   ```sh
-   npm install -g gatsby-cli
-   ```
-
-2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
+1. Use the Node version from `.nvmrc`
 
    ```sh
    nvm install
+   nvm use
    ```
 
-3. Install dependencies
+2. Install dependencies
 
    ```sh
-   yarn
+   npm install
    ```
 
-4. Start the development server
+3. Start the development server
 
    ```sh
    npm start
    ```
 
-## 🚀 Building and Running for Production
+4. Open the site locally
 
-1. Generate a full static production build
-
-   ```sh
-   npm run build
+   ```text
+   http://localhost:8000
    ```
 
-1. Preview the site as it will appear once deployed
+5. Open GraphiQL if you want to inspect Gatsby data
 
-   ```sh
-   npm run serve
+   ```text
+   http://localhost:8000/___graphql
    ```
 
-## 🎨 Color Reference
+## Scripts
 
-| Color          | Hex                                                                |
-| -------------- | ------------------------------------------------------------------ |
-| Navy           | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) `#0a192f` |
-| Light Navy     | ![#112240](https://via.placeholder.com/10/0a192f?text=+) `#112240` |
-| Lightest Navy  | ![#233554](https://via.placeholder.com/10/303C55?text=+) `#233554` |
-| Slate          | ![#8892b0](https://via.placeholder.com/10/8892b0?text=+) `#8892b0` |
-| Light Slate    | ![#a8b2d1](https://via.placeholder.com/10/a8b2d1?text=+) `#a8b2d1` |
-| Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
-| White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
-| Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
+- `npm start` starts Gatsby in development mode
+- `npm run develop` starts Gatsby in development mode
+- `npm run build` creates a production build
+- `npm run serve` serves the production build locally
+- `npm run clean` clears Gatsby caches
+
+## Content Structure
+
+### Homepage Sections
+
+The homepage is assembled in `src/pages/index.js` from section components in `src/components/sections/`.
+
+- `hero.js`
+- `about.js`
+- `jobs.js`
+- `featured.js`
+- `projects.js`
+- `contact.js`
+
+### Markdown Content
+
+- `content/jobs/`
+  Tabbed experience section
+- `content/featured/`
+  Featured projects shown on the homepage
+- `content/projects/`
+  Archive entries shown on `/archive`
+- `content/posts/`
+  Local Pensieve blog posts
+
+### Remote Content
+
+The site sources posts from the Blogger RSS feed below during Gatsby builds:
+
+```text
+https://blog.flixacct.club/feeds/posts/default?alt=rss
+```
+
+This logic lives in `gatsby-node.js` and creates `BloggerRssPost` nodes used by the homepage post grid.
+
+## Key Files
+
+- `gatsby-config.js`
+  Site metadata, plugins, filesystem sources, manifest, analytics
+- `gatsby-node.js`
+  RSS ingestion, dynamic page creation, webpack aliases
+- `src/config.js`
+  Email, social links, nav links, shared colors, scroll reveal config
+- `src/components/layout.js`
+  Shared layout wrapper used by pages
+- `src/components/head.js`
+  SEO metadata and social tags
+
+## Notes
+
+- This repo started from a portfolio template and has been adapted to the Flixacct brand.
+- Some component names still reflect the original template structure even where the content model has changed.
+- The site depends on the external Blogger feed for part of the homepage content, so offline or blocked network access may reduce what appears during builds.
