@@ -147,7 +147,7 @@ const StyledSidebar = styled.aside`
     }
   }
 
-  .resume-link {
+  .menu-link {
     ${({ theme }) => theme.mixins.bigButton};
     padding: 18px 50px;
     margin: 10% auto 0;
@@ -266,8 +266,19 @@ const Menu = () => {
               </ol>
             )}
 
-            <a href="/resume.pdf" className="resume-link">
-              Resume
+            <a
+              href="https://blog.flixacct.club/"
+              className="menu-link"
+              target="_blank"
+              rel="noopener noreferrer">
+              Blog
+            </a>
+            <a
+              href="http://media.flixacct.club/"
+              className="menu-link"
+              target="_blank"
+              rel="noopener noreferrer">
+              Movie &amp; Series
             </a>
           </nav>
         </StyledSidebar>

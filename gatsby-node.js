@@ -9,11 +9,50 @@ const _ = require('lodash');
 const Parser = require('rss-parser');
 
 const BLOGGER_FEED_URL = 'https://blog.flixacct.club/feeds/posts/default?alt=rss';
+const BLOGGER_JSON_FEED_URL = 'https://blog.flixacct.club/feeds/posts/default?alt=json';
+const BLOGGER_MAX_RESULTS = 150;
 const parser = new Parser({
   customFields: {
     item: ['content:encoded', 'media:thumbnail'],
   },
 });
+
+const getBloggerAlternateLink = links =>
+  (links || []).find(link => link.rel === 'alternate' && link.type === 'text/html')?.href || '';
+
+const extractBloggerImage = content =>
+  content.match(/<img[^>]+src=["']([^"']+)["']/i)?.[1] ?? null;
+
+const fetchBloggerJsonEntries = async reporter => {
+  const entries = [];
+  let startIndex = 1;
+  let totalResults = Infinity;
+
+  while (entries.length < totalResults) {
+    const url = `${BLOGGER_JSON_FEED_URL}&max-results=${BLOGGER_MAX_RESULTS}&start-index=${startIndex}`;
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error(`Blogger feed request failed with ${response.status}`);
+    }
+
+    const data = await response.json();
+    const feed = data.feed || {};
+    const pageEntries = feed.entry || [];
+
+    totalResults = Number(feed.openSearch$totalResults?.$t || pageEntries.length || 0);
+    entries.push(...pageEntries);
+
+    if (pageEntries.length === 0 || pageEntries.length < BLOGGER_MAX_RESULTS) {
+      break;
+    }
+
+    startIndex += pageEntries.length;
+  }
+
+  reporter.info(`Sourced ${entries.length} Blogger archive posts from JSON feed`);
+  return entries;
+};
 
 exports.sourceNodes = async ({ actions, createNodeId, createContentDigest, reporter }) => {
   const { createNode } = actions;
@@ -56,6 +95,42 @@ exports.sourceNodes = async ({ actions, createNodeId, createContentDigest, repor
     });
   } catch (error) {
     reporter.warn(`Unable to source Blogger RSS feed: ${error.message}`);
+  }
+
+  try {
+    const entries = await fetchBloggerJsonEntries(reporter);
+
+    entries.forEach(entry => {
+      const title = entry.title?.$t || 'Untitled post';
+      const content = entry.content?.$t || '';
+      const summary = entry.summary?.$t || '';
+      const labels = (entry.category || []).map(category => category.term).filter(Boolean);
+      const published = entry.published?.$t || null;
+      const updated = entry.updated?.$t || null;
+      const link = getBloggerAlternateLink(entry.link);
+      const imageUrl = entry['media$thumbnail']?.url || extractBloggerImage(content);
+
+      createNode({
+        id: createNodeId(`blogger-archive-${entry.id?.$t || link || title}`),
+        parent: null,
+        children: [],
+        internal: {
+          type: 'BloggerArchivePost',
+          contentDigest: createContentDigest(entry),
+        },
+        bloggerId: entry.id?.$t || null,
+        title,
+        link,
+        content,
+        summary,
+        labels,
+        published,
+        updated,
+        imageUrl,
+      });
+    });
+  } catch (error) {
+    reporter.warn(`Unable to source Blogger archive feed: ${error.message}`);
   }
 };
 

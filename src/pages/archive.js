@@ -45,6 +45,7 @@ const StyledTableContainer = styled.div`
           padding-left: 10px;
         }
       }
+
       &:last-child {
         padding-right: 20px;
 
@@ -66,6 +67,7 @@ const StyledTableContainer = styled.div`
         border-top-left-radius: var(--border-radius);
         border-bottom-left-radius: var(--border-radius);
       }
+
       td:last-child {
         border-top-right-radius: var(--border-radius);
         border-bottom-right-radius: var(--border-radius);
@@ -91,49 +93,49 @@ const StyledTableContainer = styled.div`
         line-height: 1.25;
       }
 
-      &.company {
-        font-size: var(--fz-lg);
+      &.date {
+        font-size: var(--fz-sm);
         white-space: nowrap;
       }
 
-      &.tech {
+      &.labels {
         font-size: var(--fz-xxs);
         font-family: var(--font-mono);
         line-height: 1.5;
+
         .separator {
           margin: 0 5px;
         }
+
         span {
           display: inline-block;
         }
       }
 
       &.links {
-        min-width: 100px;
+        min-width: 70px;
 
-        div {
-          display: flex;
-          align-items: center;
-
-          a {
-            ${({ theme }) => theme.mixins.flexCenter};
-            flex-shrink: 0;
-          }
-
-          a + a {
-            margin-left: 10px;
-          }
+        a {
+          ${({ theme }) => theme.mixins.flexCenter};
+          width: fit-content;
         }
       }
     }
   }
 `;
 
+const formatDate = value =>
+  new Date(value).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  });
+
 const ArchivePage = ({ location, data }) => {
-  const projects = data.allMarkdownRemark.edges;
+  const posts = data.allBloggerArchivePost.nodes;
   const revealTitle = useRef(null);
   const revealTable = useRef(null);
-  const revealProjects = useRef([]);
+  const revealPosts = useRef([]);
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
@@ -143,7 +145,7 @@ const ArchivePage = ({ location, data }) => {
 
     sr.reveal(revealTitle.current, srConfig());
     sr.reveal(revealTable.current, srConfig(200, 0));
-    revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 10)));
+    revealPosts.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 10)));
   }, []);
 
   return (
@@ -153,7 +155,7 @@ const ArchivePage = ({ location, data }) => {
       <main>
         <header ref={revealTitle}>
           <h1 className="big-heading">Archive</h1>
-          <p className="subtitle">A big list of things I’ve worked on</p>
+          <p className="subtitle">Posts sourced from the Flixacct blog sitemap</p>
         </header>
 
         <StyledTableContainer ref={revealTable}>
@@ -162,72 +164,48 @@ const ArchivePage = ({ location, data }) => {
               <tr>
                 <th>Year</th>
                 <th>Title</th>
-                <th className="hide-on-mobile">Made at</th>
-                <th className="hide-on-mobile">Built with</th>
+                <th className="hide-on-mobile">Published</th>
+                <th className="hide-on-mobile">Labels</th>
                 <th>Link</th>
               </tr>
             </thead>
+
             <tbody>
-              {projects.length > 0 &&
-                projects.map(({ node }, i) => {
-                  const {
-                    date,
-                    github,
-                    external,
-                    ios,
-                    android,
-                    title,
-                    tech,
-                    company,
-                  } = node.frontmatter;
-                  return (
-                    <tr key={i} ref={el => (revealProjects.current[i] = el)}>
-                      <td className="overline year">{`${new Date(date).getFullYear()}`}</td>
+              {posts.map((post, i) => {
+                const { title, link, published, labels } = post;
+                const year = new Date(published).getFullYear();
 
-                      <td className="title">{title}</td>
-
-                      <td className="company hide-on-mobile">
-                        {company ? <span>{company}</span> : <span>—</span>}
-                      </td>
-
-                      <td className="tech hide-on-mobile">
-                        {tech?.length > 0 &&
-                          tech.map((item, i) => (
-                            <span key={i}>
-                              {item}
-                              {''}
-                              {i !== tech.length - 1 && <span className="separator">&middot;</span>}
-                            </span>
-                          ))}
-                      </td>
-
-                      <td className="links">
-                        <div>
-                          {external && (
-                            <a href={external} aria-label="External Link">
-                              <Icon name="External" />
-                            </a>
-                          )}
-                          {github && (
-                            <a href={github} aria-label="GitHub Link">
-                              <Icon name="GitHub" />
-                            </a>
-                          )}
-                          {ios && (
-                            <a href={ios} aria-label="Apple App Store Link">
-                              <Icon name="AppStore" />
-                            </a>
-                          )}
-                          {android && (
-                            <a href={android} aria-label="Google Play Store Link">
-                              <Icon name="PlayStore" />
-                            </a>
-                          )}
-                        </div>
-                      </td>
-                    </tr>
-                  );
-                })}
+                return (
+                  <tr key={link || `${title}-${i}`} ref={el => (revealPosts.current[i] = el)}>
+                    <td className="overline year">{year}</td>
+                    <td className="title">{title}</td>
+                    <td className="date hide-on-mobile">{formatDate(published)}</td>
+                    <td className="labels hide-on-mobile">
+                      {labels?.length > 0 ? (
+                        labels.map((label, index) => (
+                          <span key={`${label}-${index}`}>
+                            {label}
+                            {index !== labels.length - 1 && (
+                              <span className="separator">&middot;</span>
+                            )}
+                          </span>
+                        ))
+                      ) : (
+                        <span>—</span>
+                      )}
+                    </td>
+                    <td className="links">
+                      {link ? (
+                        <a href={link} aria-label={`Open ${title}`} target="_blank" rel="noreferrer">
+                          <Icon name="External" />
+                        </a>
+                      ) : (
+                        <span>—</span>
+                      )}
+                    </td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </StyledTableContainer>
@@ -235,33 +213,33 @@ const ArchivePage = ({ location, data }) => {
     </Layout>
   );
 };
+
 ArchivePage.propTypes = {
   location: PropTypes.object.isRequired,
-  data: PropTypes.object.isRequired,
+  data: PropTypes.shape({
+    allBloggerArchivePost: PropTypes.shape({
+      nodes: PropTypes.arrayOf(
+        PropTypes.shape({
+          title: PropTypes.string.isRequired,
+          link: PropTypes.string,
+          published: PropTypes.string.isRequired,
+          labels: PropTypes.arrayOf(PropTypes.string),
+        }),
+      ).isRequired,
+    }).isRequired,
+  }).isRequired,
 };
 
 export default ArchivePage;
 
 export const pageQuery = graphql`
   {
-    allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/content/projects/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            date
-            title
-            tech
-            github
-            external
-            ios
-            android
-            company
-          }
-          html
-        }
+    allBloggerArchivePost(sort: { fields: [published], order: DESC }) {
+      nodes {
+        title
+        link
+        published
+        labels
       }
     }
   }

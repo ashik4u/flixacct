@@ -143,7 +143,7 @@ const StyledLinks = styled.div`
     }
   }
 
-  .resume-button {
+  .nav-button {
     ${({ theme }) => theme.mixins.smallButton};
     margin-left: 15px;
     font-size: var(--fz-xs);
@@ -200,14 +200,23 @@ const Nav = ({ isHome }) => {
     </div>
   );
 
-  const ResumeLink = (
-    <a
-      className="resume-button"
-      href="https://blog.flixacct.club/"
-      target="_blank"
-      rel="noopener noreferrer">
-      Blog
-    </a>
+  const NavButtons = (
+    <>
+      <a
+        className="nav-button"
+        href="https://blog.flixacct.club/"
+        target="_blank"
+        rel="noopener noreferrer">
+        Blog
+      </a>
+      <a
+        className="nav-button"
+        href="http://media.flixacct.club/"
+        target="_blank"
+        rel="noopener noreferrer">
+        Movie &amp; Series
+      </a>
+    </>
   );
 
   return (
@@ -226,7 +235,7 @@ const Nav = ({ isHome }) => {
                     </li>
                   ))}
               </ol>
-              <div>{ResumeLink}</div>
+              <div>{NavButtons}</div>
             </StyledLinks>
 
             <Menu />
@@ -260,7 +269,7 @@ const Nav = ({ isHome }) => {
                 {isMounted && (
                   <CSSTransition classNames={fadeDownClass} timeout={timeout}>
                     <div style={{ transitionDelay: `${isHome ? navLinks.length * 100 : 0}ms` }}>
-                      {ResumeLink}
+                      {NavButtons}
                     </div>
                   </CSSTransition>
                 )}
