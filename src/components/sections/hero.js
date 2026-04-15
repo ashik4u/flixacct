@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
-import { navDelay, loaderDelay } from '@utils';
+import { loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledHeroSection = styled.section`
@@ -47,17 +47,8 @@ const StyledHeroSection = styled.section`
 `;
 
 const Hero = () => {
-  const [isMounted, setIsMounted] = useState(false);
+  const isMounted = true;
   const prefersReducedMotion = usePrefersReducedMotion();
-
-  useEffect(() => {
-    if (prefersReducedMotion) {
-      return;
-    }
-
-    const timeout = setTimeout(() => setIsMounted(true), navDelay);
-    return () => clearTimeout(timeout);
-  }, []);
 
   const one = <h1>Hey, welcome to</h1>;
   const two = <h2 className="big-heading">Flixacct.</h2>;

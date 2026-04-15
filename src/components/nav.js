@@ -151,7 +151,7 @@ const StyledLinks = styled.div`
 `;
 
 const Nav = ({ isHome }) => {
-  const [isMounted, setIsMounted] = useState(!isHome);
+  const isMounted = true;
   const scrollDirection = useScrollDirection('down');
   const [scrolledToTop, setScrolledToTop] = useState(true);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -165,14 +165,9 @@ const Nav = ({ isHome }) => {
       return;
     }
 
-    const timeout = setTimeout(() => {
-      setIsMounted(true);
-    }, 100);
-
     window.addEventListener('scroll', handleScroll);
 
     return () => {
-      clearTimeout(timeout);
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
